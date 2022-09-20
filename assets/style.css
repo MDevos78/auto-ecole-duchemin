@@ -1,0 +1,350 @@
+/*
+
+font-family: myriad-pro,sans-serif;
+font-weight: 700;
+font-style: normal;
+
+font-family: myriad-pro-condensed,sans-serif;
+font-weight: 700;
+font-style: normal;*/
+*{
+    font-family: myriad-pro,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+body{
+    max-width: 1120px;
+    margin: auto;
+}
+header{
+    max-width: 1120px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 600px;
+    margin: 0px;
+}
+header img{
+    display: flex;
+    height: 100%;
+    text-align: left;
+    align-items: left;
+    margin: 0px;
+    flex-grow: 2;
+}
+.coordonnées{
+    letter-spacing: 2px;
+    height: 100%;
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-end;  
+    margin-left: 20px;
+    margin-top: 25px;
+    flex-grow: 1;
+}
+.email{
+    margin-bottom: 10px;
+}
+
+.menu{
+    height: 60px;
+    background-color: black;
+    width: 1120px;
+    margin: auto;
+}
+#enveloppe{
+    display: none;
+}
+nav li{
+    display: inline-block;
+    height: 60px;
+    width: 120px;
+    text-align: center;
+    padding-top: 20px;
+}
+nav a{ 
+    text-decoration: none;
+    color: white;
+}
+nav a:hover{
+   color: rgb(41, 104, 181);
+}
+nav li:hover{
+    background-color: white;
+}
+div{
+    width: 1120px;
+    margin: auto;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.catch-p{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 0,5fr 2,5fr;
+    margin-bottom: 30px;
+    
+}
+.item-grid1{
+    width: 160px;
+    grid-column: 1;
+}
+.item-grid2{
+    width: 960px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    height: 10px;
+    grid-column: 2;
+    
+}
+
+.grid-article{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 1120px;
+    column-gap: 23px;
+    text-align: center;
+    color: rgb(41, 104, 181);   
+    margin-bottom: 40px;
+}
+.item-article1{
+    width: 265px;
+    background-color: rgb(248, 248, 248);
+    height: 550px;
+   
+}
+.item-article2{
+    width: 265px;
+    background-color: rgb(248, 248, 248);
+    height: 550px;
+}
+.item-article3{
+    width: 265px;
+    background-color: rgb(248, 248, 248);
+    padding-bottom: 26px;
+    height: 524px;
+}
+.item-article4{
+    width: 265px;
+    background-color: rgb(248, 248, 248);
+    padding-bottom: 10px;
+    height: 540px;
+}
+h3{
+    margin-top: 20px;
+    color: black;
+    margin-bottom: 20px;
+}
+ul{
+    list-style-type: none;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+input{
+    padding: 5px 15px;
+    background-color: rgb(214, 83, 43);
+    color: white;
+    border-radius: 5px;
+    border-color: rgb(214, 83, 43);
+}
+input:hover{
+    background-color: white;
+    border-color: white;
+    color: rgb(214, 83, 43);
+}
+.item-article3 input{
+    margin-top: 26px;
+}
+footer{
+    width: 1120px;
+    margin: auto;
+}
+footer img{
+    float: right;
+}
+@media screen and (max-width : 800px) 
+{
+    body{
+        max-width: 800px;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        display: flex;
+        width: 80%;
+        
+        margin-left: 10%;
+    }   
+    header{
+        width: 80%;
+        margin: auto;
+        display: flex;
+      
+    }
+    header img{
+        display: flex;
+        width: 80%;
+        height: 100%;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .coordonnées{
+        display: flex;
+        width: 50%;
+        height: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0;
+    }    
+    .tel::after{
+        content: "/";
+    }
+    .fax::after{
+        content: "/";
+    }
+    .email{
+        margin-top: 10px;
+    }
+    .address{
+       justify-content: center;
+    }        
+    .address br{
+        display: none;
+    }
+    .menu{
+        width: 100%;
+        margin-right: 0;
+    }
+    nav ul{
+        padding-left: 0;
+        text-align: center;
+    }
+    section img{
+        width: 100%;
+        align-items: center;
+    }
+    .wrapper{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .main{
+        width: 80%;
+        margin: auto;
+    }
+    .grid-article{
+        width: 90%;
+        margin: auto;
+        column-gap: 10px;
+        row-gap: 22px;
+        display: flex;
+        flex-wrap: wrap; 
+    }
+    article{
+        width: 49%;
+    }
+    .grid-container{
+        width : 100%
+    }
+    .item-grid2{
+        width: 480px;
+    } 
+    footer{
+        display: flex;
+        justify-content: 0;
+        width: 100%;
+        flex-direction:column-reverse;
+        margin: auto;
+        align-items: center;
+    }
+    footer{
+        width: 50%;
+        text-align: center;
+    }
+    footer img{
+        width: 10%;
+   }
+}
+@media screen and (max-width : 500px)
+{
+    body{
+        max-width: 800px;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    header{
+        width: 100%;
+        margin: auto;
+        display: flex;
+    }
+    
+    .fax::after{
+        content: none;
+    }
+    .address{
+        display: none;
+     }        
+    .logo{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .coordonnées{
+        margin-left: 0px;
+    }
+    nav li{
+        width: 15%;
+    }
+    #contact{
+        display: none
+    }
+    #enveloppe{
+        display: inline;
+    }
+    section{
+
+    }
+    .item-grid2{
+        width: 300px;
+    } 
+    .grid-article{
+        width: 100%;
+        margin: auto;
+        column-gap: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    footer{
+        width: 100%;
+        font-size: small;
+        margin-top: 50px;
+        text-align: center;
+    }
+    #contact{
+        display: none;
+    }
+    #enveloppe img{
+        background-color: white;
+        border-radius: 5px;
+    }
+
+
+}
